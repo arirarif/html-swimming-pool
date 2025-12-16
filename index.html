@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JC Pool Distributing LLC - Stronger. Longer Lasting. Built in the USA.</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>JC Pool Distributing LLC - Premium Pool Kits Built in USA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-modern.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="modern-nav">
         <div class="nav-container">
             <div class="logo">
-                <span class="logo-highlight">JC</span> Pool Distributing
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#0052CC"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20Z" fill="white" fill-opacity="0.2"/>
+                    <path d="M16 20C16 17.7909 17.7909 16 20 16C22.2091 16 24 17.7909 24 20C24 22.2091 22.2091 24 20 24C17.7909 24 16 22.2091 16 20Z" fill="white"/>
+                </svg>
+                <span>JC Pool <strong>Distributing</strong></span>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Retail Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#products">Products ▾</a>
                     <div class="dropdown-content">
@@ -26,260 +34,297 @@
                 <li><a href="for-dealers.html">For Dealers</a></li>
                 <li><a href="media.html">Media</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="dealer-signup.html" class="nav-cta">Dealer Sign Up</a></li>
+                <li><a href="dealer-signup.html" class="btn-primary">Become a Dealer</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-tagline">Stronger. Longer Lasting. Built in the USA.</div>
-            <h1>Premium Pool Kits for Professional Installers</h1>
-            <p>We don't raise prices because of demand — we build value every day.</p>
-            <div class="cta-buttons">
-                <a href="dealer-signup.html" class="cta-button">Dealer Sign Up</a>
-                <a href="tel:+15551234567" class="cta-button secondary">Call for Pricing</a>
+    <section class="hero-modern">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=2000&q=90" alt="Premium Pool" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content-modern">
+            <div class="hero-badge">🇺🇸 Proudly Made in USA</div>
+            <h1 class="hero-title">
+                <span class="highlight">Stronger.</span>
+                <span class="highlight">Longer Lasting.</span>
+                Built in the USA.
+            </h1>
+            <p class="hero-subtitle">Premium pool kits engineered for professional installers who demand excellence. Every component, every detail, built to last.</p>
+            <div class="hero-cta">
+                <a href="dealer-signup.html" class="btn-large btn-primary-solid">
+                    <span>Become a Dealer</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="tel:+15551234567" class="btn-large btn-glass">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Call for Pricing</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Pools Installed</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Value Proposition -->
-    <section class="value-prop">
-        <h2>Built for Professionals, Designed to Last</h2>
-        <div class="value-badges">
-            <div class="badge">🇺🇸 Made in USA</div>
-            <div class="badge">🏆 Superior Quality</div>
-            <div class="badge">⚡ Fast Shipping</div>
-            <div class="badge">💼 Dealer Support</div>
-        </div>
-    </section>
-
-    <!-- Welcome Video Section -->
-    <section class="video-section">
-        <div class="section-title">
-            <h2>See Our Pools in Action</h2>
-            <p>Watch how our pool kits deliver exceptional value to installers</p>
-        </div>
-        <div class="video-placeholder">
-            ▶️ Welcome Video
-        </div>
-        <div class="cta-buttons">
-            <a href="dealer-signup.html" class="cta-button">Become a Dealer</a>
-            <a href="tel:+15551234567" class="cta-button secondary">Call for Pricing</a>
+    <!-- Value Props -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="#0052CC" opacity="0.2"/>
+                            <path d="M4 20L16 26L28 20M4 15L16 21L28 15" stroke="#0052CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Superior Quality</h3>
+                    <p>Premium materials and construction that stand the test of time</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" fill="#0052CC" opacity="0.2"/>
+                            <path d="M16 8V16L20 20" stroke="#0052CC" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround to keep your projects on schedule</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="4" fill="#0052CC" opacity="0.2"/>
+                            <path d="M12 16L15 19L20 13" stroke="#0052CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated team ready to assist with technical guidance</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16Z" fill="#0052CC" opacity="0.2"/>
+                            <path d="M16 12V16L19 19" stroke="#0052CC" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Fair Pricing</h3>
+                    <p>Consistent value without demand-based price increases</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Featured Product -->
-    <section class="featured-product">
-        <div class="section-title">
-            <h2>Our Most Requested Pool</h2>
-            <p>Durable. Proven. Built for Installers.</p>
-        </div>
-
-        <div class="product-showcase">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="14x28 Pool Kit" class="product-image">
-            <div class="product-info">
-                <h3>14×28 Pool Kit</h3>
-                <p>Our most popular size for residential installations. This pool kit includes everything you need for a professional installation that your customers will love for decades.</p>
-                <p><strong>Perfect for:</strong> Residential contractors, landscape professionals, and pool installation businesses looking for reliable, high-quality pool systems.</p>
-                <p><strong>What's Included:</strong> Complete structural components, premium vinyl liner, filtration system, and all necessary hardware for installation.</p>
-                <a href="tel:+15551234567" class="cta-button">Call for Pricing</a>
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Most Popular</span>
+                <h2>14×28 Pool Kit</h2>
+                <p>Durable. Proven. Built for Installers.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Every Day is Special -->
-    <section class="special-message">
-        <h2>Every Day is a Special</h2>
-        <p>We don't raise prices because of demand — we build value every day. Fair pricing, consistent quality, and honest partnerships are what we stand for.</p>
-    </section>
-
-    <!-- Pool Shapes Section -->
-    <section class="pool-shapes">
-        <div class="section-title">
-            <h2>Available Pool Shapes & Sizes</h2>
-            <p>Professional-grade pool kits in various configurations</p>
-        </div>
-
-        <div class="shapes-grid">
-            <!-- Rectangular Pool -->
-            <div class="shape-card">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Rectangular Pool" class="shape-image">
-                <div class="shape-content">
-                    <h3>Rectangular</h3>
-                    <p>Classic design perfect for lap swimming and modern installations</p>
-                    <ul class="shape-features">
-                        <li>Sizes: 12×24 to 20×40</li>
-                        <li>Ideal for exercise</li>
-                        <li>Space-efficient</li>
-                        <li>Easy to cover</li>
-                    </ul>
-                    <a href="pool-kits.html" class="shape-link">View Details →</a>
+            <div class="featured-grid">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=90" alt="14x28 Pool">
+                    <div class="image-badge">Best Seller</div>
                 </div>
-            </div>
-
-            <!-- Kidney Pool -->
-            <div class="shape-card">
-                <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80" alt="Kidney Pool" class="shape-image">
-                <div class="shape-content">
-                    <h3>Kidney Shaped</h3>
-                    <p>Elegant curves that complement natural landscaping</p>
-                    <ul class="shape-features">
-                        <li>Organic design</li>
-                        <li>Perfect for landscaping</li>
-                        <li>Great for entertaining</li>
-                        <li>Timeless appeal</li>
-                    </ul>
-                    <a href="tel:+15551234567" class="shape-link">Call for Pricing →</a>
-                </div>
-            </div>
-
-            <!-- Oval Pool -->
-            <div class="shape-card">
-                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&q=80" alt="Oval Pool" class="shape-image">
-                <div class="shape-content">
-                    <h3>Oval</h3>
-                    <p>Smooth curves for sophisticated backyard installations</p>
-                    <ul class="shape-features">
-                        <li>Soft rounded edges</li>
-                        <li>Safe for families</li>
-                        <li>Elegant aesthetics</li>
-                        <li>Versatile sizing</li>
-                    </ul>
-                    <a href="tel:+15551234567" class="shape-link">Call for Pricing →</a>
-                </div>
-            </div>
-
-            <!-- Custom Pool -->
-            <div class="shape-card">
-                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=800&q=80" alt="Custom Pool" class="shape-image">
-                <div class="shape-content">
-                    <h3>Custom Design</h3>
-                    <p>Built to your exact specifications and requirements</p>
-                    <ul class="shape-features">
-                        <li>Tailored dimensions</li>
-                        <li>Unique configurations</li>
-                        <li>Special features</li>
-                        <li>Professional design</li>
-                    </ul>
-                    <a href="tel:+15551234567" class="shape-link">Call for Custom Pricing →</a>
+                <div class="featured-content">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon-check">✓</div>
+                            <div>
+                                <h4>Complete System</h4>
+                                <p>Everything needed for professional installation</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-check">✓</div>
+                            <div>
+                                <h4>Premium Components</h4>
+                                <p>High-grade materials built to last decades</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-check">✓</div>
+                            <div>
+                                <h4>Filtration Included</h4>
+                                <p>Complete filtration system with all hardware</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-check">✓</div>
+                            <div>
+                                <h4>Installation Support</h4>
+                                <p>Technical guidance throughout the process</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel:+15551234567" class="btn-large btn-primary-solid">
+                        <span>Call for Pricing</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-            <p>Ready to get started? Reach out today</p>
-        </div>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-details">
-                        <h4>Call Us</h4>
-                        <a href="tel:+15551234567">(555) 123-4567</a>
-                        <p>Hours: 7:00 AM – 2:00 PM CT</p>
+    <!-- Pool Shapes -->
+    <section class="pool-shapes-modern">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-badge">Our Collection</span>
+                <h2>Available Pool Shapes</h2>
+                <p>Professional-grade designs for every project</p>
+            </div>
+            <div class="shapes-grid-modern">
+                <div class="shape-card-modern">
+                    <div class="shape-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=90" alt="Rectangular Pool">
+                        <div class="shape-overlay">
+                            <a href="pool-kits.html" class="shape-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="shape-info">
+                        <h3>Rectangular</h3>
+                        <p>Classic design for lap swimming</p>
+                        <div class="shape-tags">
+                            <span>12×24 - 20×40</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-details">
-                        <h4>Location</h4>
-                        <p>Serving contractors nationwide<br>from our central facility</p>
+                <div class="shape-card-modern">
+                    <div class="shape-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=600&q=90" alt="Kidney Pool">
+                        <div class="shape-overlay">
+                            <a href="tel:+15551234567" class="shape-btn">Call for Pricing</a>
+                        </div>
+                    </div>
+                    <div class="shape-info">
+                        <h3>Kidney Shaped</h3>
+                        <p>Elegant curves for landscaping</p>
+                        <div class="shape-tags">
+                            <span>Custom Sizes</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <div class="contact-details">
-                        <h4>Email Us</h4>
-                        <p>info@jcpooldistributing.com<br>quotes@jcpooldistributing.com</p>
+                <div class="shape-card-modern">
+                    <div class="shape-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=600&q=90" alt="Oval Pool">
+                        <div class="shape-overlay">
+                            <a href="tel:+15551234567" class="shape-btn">Call for Pricing</a>
+                        </div>
+                    </div>
+                    <div class="shape-info">
+                        <h3>Oval</h3>
+                        <p>Sophisticated rounded design</p>
+                        <div class="shape-tags">
+                            <span>Multiple Sizes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-card-modern">
+                    <div class="shape-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=600&q=90" alt="Custom Pool">
+                        <div class="shape-overlay">
+                            <a href="tel:+15551234567" class="shape-btn">Custom Pricing</a>
+                        </div>
+                    </div>
+                    <div class="shape-info">
+                        <h3>Custom Design</h3>
+                        <p>Built to your specifications</p>
+                        <div class="shape-tags">
+                            <span>Fully Customizable</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="contact-form">
-                <h3>Request Information</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="project">Project Details</label>
-                        <textarea id="project" name="project"></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button">Call for Pricing</button>
-                </form>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Every Day is a Special</h2>
+                <p>We don't raise prices because of demand — we build value every day. Fair pricing, consistent quality, and honest partnerships are what we stand for.</p>
+                <div class="cta-buttons">
+                    <a href="dealer-signup.html" class="btn-large btn-white">Become a Dealer</a>
+                    <a href="contact.html" class="btn-large btn-outline-white">Contact Us</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>JC Pool Distributing</h3>
-                <p>Premium pool kits for professional installers. Built in the USA with superior quality and backed by exceptional dealer support.</p>
-                <div class="made-in-usa">🇺🇸 Made in USA</div>
-                <div class="supplier-logos">
-                    <div class="supplier-logo">Supplier 1</div>
-                    <div class="supplier-logo">Supplier 2</div>
-                    <div class="supplier-logo">Supplier 3</div>
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#0052CC"/>
+                            <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20Z" fill="white" fill-opacity="0.2"/>
+                            <path d="M16 20C16 17.7909 17.7909 16 20 16C22.2091 16 24 17.7909 24 20C24 22.2091 22.2091 24 20 24C17.7909 24 16 22.2091 16 20Z" fill="white"/>
+                        </svg>
+                        <span>JC Pool Distributing</span>
+                    </div>
+                    <p>Premium pool kits for professional installers. Built in the USA with superior quality.</p>
+                    <div class="footer-badge">🇺🇸 Made in USA</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="pool-kits.html">Pool Kits</a></li>
+                        <li><a href="fences.html">Fences</a></li>
+                        <li><a href="signature-products.html">Signature Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="for-dealers.html">For Dealers</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="dealer-signup.html">Dealer Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Hours: 7 AM – 2 PM CT</li>
+                        <li><a href="mailto:info@jcpooldistributing.com">info@jcpooldistributing.com</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Retail Home</a></li>
-                    <li><a href="pool-kits.html">Pool Kits</a></li>
-                    <li><a href="for-dealers.html">For Dealers</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="dealer-signup.html">Dealer Sign Up</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JC Pool Distributing LLC. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Products</h3>
-                <ul class="footer-links">
-                    <li><a href="pool-kits.html">Pool Kits</a></li>
-                    <li><a href="fences.html">Fences</a></li>
-                    <li><a href="signature-products.html">Signature Products</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p>📞 <a href="tel:+15551234567" style="color: #e63946;">(555) 123-4567</a></p>
-                <p>Hours: 7:00 AM – 2:00 PM CT</p>
-                <p>✉️ info@jcpooldistributing.com</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 JC Pool Distributing LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
 
