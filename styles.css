@@ -312,6 +312,85 @@ nav {
     margin: 0 auto;
 }
 
+/* Pool Shapes Section */
+.pool-shapes {
+    padding: 5rem 5%;
+    background: #f8f9fa;
+}
+
+.shapes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.shape-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.shape-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0,61,122,0.2);
+}
+
+.shape-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.shape-content {
+    padding: 1.5rem;
+}
+
+.shape-content h3 {
+    font-size: 1.5rem;
+    color: #003d7a;
+    margin-bottom: 0.5rem;
+}
+
+.shape-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.shape-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.shape-features li {
+    padding: 0.3rem 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.shape-features li:before {
+    content: "✓ ";
+    color: #e63946;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.shape-link {
+    display: inline-block;
+    color: #003d7a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.shape-link:hover {
+    color: #e63946;
+    transform: translateX(5px);
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 5%;
