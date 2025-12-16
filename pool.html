@@ -284,6 +284,110 @@
             opacity: 0.9;
         }
 
+        /* About Section */
+        .about {
+            padding: 5rem 5%;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: #0066cc;
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+        }
+
+        .testimonial-text {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #0066cc;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            color: #333;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
@@ -323,6 +427,19 @@
             .stats-grid {
                 grid-template-columns: 1fr;
             }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -345,6 +462,14 @@
 
             .stat-number {
                 font-size: 2.5rem;
+            }
+
+            .about-text h3 {
+                font-size: 1.5rem;
+            }
+
+            .about-image {
+                height: 250px;
             }
         }
     </style>
@@ -501,6 +626,72 @@
             <div class="stat-item">
                 <span class="stat-number">50+</span>
                 <span class="stat-label">Design Awards</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About AquaLuxe Pools</h2>
+            <p>Building dreams, one pool at a time</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Trusted Pool Partner Since 2004</h3>
+                <p>At AquaLuxe Pools, we believe that every backyard deserves to be a personal oasis. For over two decades, we've been transforming ordinary outdoor spaces into extraordinary aquatic retreats that families cherish for generations.</p>
+                <p>Our passion for perfection drives us to use only premium materials, employ the most skilled craftsmen, and implement innovative design techniques that set industry standards. From the initial consultation to the final splash, we're committed to exceeding your expectations at every turn.</p>
+                <p>What sets us apart is our unwavering commitment to quality, transparency, and customer satisfaction. We don't just build pools – we create lasting relationships with our clients, ensuring that your investment brings joy and value for years to come.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80" alt="Pool construction team" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Don't just take our word for it</p>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">AquaLuxe transformed our backyard into an absolute paradise! The team was professional, efficient, and the quality of work exceeded our expectations. Our family enjoys the pool every single day!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JM</div>
+                    <div class="author-info">
+                        <h4>Jennifer Martinez</h4>
+                        <p>Homeowner, Miami FL</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">From design to completion, everything was seamless. They listened to our ideas and delivered a custom pool that perfectly fits our landscape. Highly recommend!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RC</div>
+                    <div class="author-info">
+                        <h4>Robert Chen</h4>
+                        <p>Homeowner, Austin TX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">The attention to detail and craftsmanship is outstanding. Five years later, our pool still looks brand new. Best investment we've ever made for our home!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SK</div>
+                    <div class="author-info">
+                        <h4>Sarah Klein</h4>
+                        <p>Homeowner, Phoenix AZ</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
