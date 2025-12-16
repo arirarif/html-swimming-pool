@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - JC Pool Distributing LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .media-section {
+            padding: 8rem 5% 5rem;
+            background: white;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,61,122,0.2);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #003d7a 0%, #002a54 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .video-info h3 {
+            color: #003d7a;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .video-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .testimonial-video {
+            background: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-highlight">JC</span> Pool Distributing
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Retail Home</a></li>
+                <li class="dropdown">
+                    <a href="#products">Products ▾</a>
+                    <div class="dropdown-content">
+                        <a href="pool-kits.html">Pool Kits</a>
+                        <a href="fences.html">Fences</a>
+                        <a href="signature-products.html">Signature Products</a>
+                    </div>
+                </li>
+                <li><a href="for-dealers.html">For Dealers</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dealer-signup.html" class="nav-cta">Dealer Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Media Section -->
+    <section class="media-section">
+        <div class="section-title">
+            <h2>Installation Videos & Media</h2>
+            <p>Watch our pool kits in action - installation guides, demonstrations, and customer testimonials</p>
+        </div>
+
+        <div class="video-grid">
+            <!-- Installation Video 1 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Complete Pool Kit Installation Guide</h3>
+                    <p>Watch a full installation from start to finish. See how our complete kits make the process smooth and efficient.</p>
+                </div>
+            </div>
+
+            <!-- Product Demo -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Pool Kit Components Overview</h3>
+                    <p>Detailed walkthrough of all components included in our premium pool kits and what makes them superior quality.</p>
+                </div>
+            </div>
+
+            <!-- Time-Lapse Build -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>14×28 Pool Build Time-Lapse</h3>
+                    <p>Our most popular size installed in just 3 days. See the entire process condensed into a few minutes.</p>
+                </div>
+            </div>
+
+            <!-- Liner Installation -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Premium Liner Installation Tips</h3>
+                    <p>Professional techniques for installing our premium vinyl liners for a perfect, wrinkle-free finish.</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 1 -->
+            <div class="video-card testimonial-video">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Contractor Testimonial - Mike's Pools</h3>
+                    <p>"We've installed over 50 JC Pool kits. The quality is unmatched and our customers love them." - Mike Thompson</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="video-card testimonial-video">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Dealer Success Story</h3>
+                    <p>How one landscaping company added pools to their services and grew their business by 40%.</p>
+                </div>
+            </div>
+
+            <!-- Technical Guide -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Filtration System Setup</h3>
+                    <p>Step-by-step guide to installing and configuring the filtration systems included with our pool kits.</p>
+                </div>
+            </div>
+
+            <!-- Custom Build -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Custom Pool Design Process</h3>
+                    <p>Learn how we work with contractors to create custom-sized pools for unique installations.</p>
+                </div>
+            </div>
+
+            <!-- Quality Control -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    ▶️
+                </div>
+                <div class="video-info">
+                    <h3>Made in USA - Factory Tour</h3>
+                    <p>Take a tour of our manufacturing facility and see our quality control process in action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Resources -->
+    <section class="special-message">
+        <h2>Educational Resources for Dealers</h2>
+        <p style="max-width: 800px; margin: 1rem auto 2rem;">
+            As a JC Pool Distributing dealer, you'll have access to our complete library of installation guides, technical documentation, and support videos. Contact us to learn more about our dealer resources.
+        </p>
+        <div class="cta-buttons">
+            <a href="dealer-signup.html" class="cta-button">Become a Dealer</a>
+            <a href="tel:+15551234567" class="cta-button secondary">Call for Info</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JC Pool Distributing</h3>
+                <p>Premium pool kits for professional installers. Built in the USA with superior quality and backed by exceptional dealer support.</p>
+                <div class="made-in-usa">🇺🇸 Made in USA</div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Retail Home</a></li>
+                    <li><a href="pool-kits.html">Pool Kits</a></li>
+                    <li><a href="for-dealers.html">For Dealers</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 <a href="tel:+15551234567" style="color: #e63946;">(555) 123-4567</a></p>
+                <p>Hours: 7:00 AM – 2:00 PM CT</p>
+                <p>✉️ info@jcpooldistributing.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 JC Pool Distributing LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
