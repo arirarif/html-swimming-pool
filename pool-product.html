@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Kit Details - JC Pool Distributing LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-detail {
+            padding: 8rem 5% 5rem;
+            background: white;
+        }
+
+        .product-detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .product-gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .product-info h1 {
+            font-size: 2.5rem;
+            color: #003d7a;
+            margin-bottom: 1rem;
+        }
+
+        .product-description {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .size-selector {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .size-selector h3 {
+            color: #003d7a;
+            margin-bottom: 1rem;
+        }
+
+        .selector-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .selector-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .selector-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .selector-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+        }
+
+        .selector-group select:focus {
+            outline: none;
+            border-color: #003d7a;
+        }
+
+        .cta-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .custom-notice {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        .custom-notice.active {
+            display: block;
+        }
+
+        .custom-notice p {
+            margin: 0;
+            color: #856404;
+            font-weight: 600;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .features-list li:before {
+            content: "✓ ";
+            color: #e63946;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-highlight">JC</span> Pool Distributing
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Retail Home</a></li>
+                <li class="dropdown">
+                    <a href="#products">Products ▾</a>
+                    <div class="dropdown-content">
+                        <a href="pool-kits.html">Pool Kits</a>
+                        <a href="fences.html">Fences</a>
+                        <a href="signature-products.html">Signature Products</a>
+                    </div>
+                </li>
+                <li><a href="for-dealers.html">For Dealers</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dealer-signup.html" class="nav-cta">Dealer Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1000&q=80" alt="Pool Kit" id="mainImage">
+            </div>
+
+            <div class="product-info">
+                <h1>Premium Pool Kit</h1>
+                <p class="product-description">
+                    Our premium pool kits are engineered for professional installers who demand the best. Each kit includes everything you need for a complete installation: structural components, premium vinyl liner, filtration system, and all necessary hardware.
+                </p>
+
+                <ul class="features-list">
+                    <li>High-grade structural components - built to last</li>
+                    <li>Premium vinyl liner with 20-year warranty</li>
+                    <li>Complete filtration system included</li>
+                    <li>All installation hardware and fittings</li>
+                    <li>Made in USA with superior craftsmanship</li>
+                    <li>Professional installer support available</li>
+                </ul>
+
+                <div class="size-selector">
+                    <h3>Select Your Configuration</h3>
+
+                    <div class="selector-group">
+                        <label for="standardSize">Standard Size:</label>
+                        <select id="standardSize" onchange="handleSizeChange()">
+                            <option value="">-- Select Size --</option>
+                            <option value="12x24">12×24</option>
+                            <option value="14x28">14×28 (Most Popular)</option>
+                            <option value="16x32">16×32</option>
+                            <option value="18x36">18×36</option>
+                            <option value="20x40">20×40</option>
+                            <option value="custom">Custom Size / Custom Build</option>
+                        </select>
+                    </div>
+
+                    <div class="selector-group" id="tshapeGroup" style="display: none;">
+                        <label for="tshape">T-Shape Extension (Optional):</label>
+                        <select id="tshape" onchange="handleSizeChange()">
+                            <option value="">No Extension</option>
+                            <option value="6ft">6' Extension</option>
+                            <option value="8ft">8' Extension</option>
+                            <option value="10ft">10' Extension</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="custom-notice" id="customNotice">
+                    <p>📞 Custom sizing selected - Please call for custom pricing and specifications</p>
+                </div>
+
+                <div class="cta-section" id="standardCtas">
+                    <a href="tel:+15551234567" class="cta-button">Call for Pricing</a>
+                    <a href="contact.html" class="cta-button secondary">Request Quote</a>
+                </div>
+
+                <div class="cta-section" id="customCtas" style="display: none;">
+                    <a href="tel:+15551234567" class="cta-button">Call for Custom Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JC Pool Distributing</h3>
+                <p>Premium pool kits for professional installers. Built in the USA with superior quality and backed by exceptional dealer support.</p>
+                <div class="made-in-usa">🇺🇸 Made in USA</div>
+                <div class="supplier-logos">
+                    <div class="supplier-logo">Supplier 1</div>
+                    <div class="supplier-logo">Supplier 2</div>
+                    <div class="supplier-logo">Supplier 3</div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Retail Home</a></li>
+                    <li><a href="pool-kits.html">Pool Kits</a></li>
+                    <li><a href="for-dealers.html">For Dealers</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dealer-signup.html">Dealer Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="pool-kits.html">Pool Kits</a></li>
+                    <li><a href="fences.html">Fences</a></li>
+                    <li><a href="signature-products.html">Signature Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 <a href="tel:+15551234567" style="color: #e63946;">(555) 123-4567</a></p>
+                <p>Hours: 7:00 AM – 2:00 PM CT</p>
+                <p>✉️ info@jcpooldistributing.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 JC Pool Distributing LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSizeChange() {
+            const standardSize = document.getElementById('standardSize').value;
+            const tshapeGroup = document.getElementById('tshapeGroup');
+            const customNotice = document.getElementById('customNotice');
+            const standardCtas = document.getElementById('standardCtas');
+            const customCtas = document.getElementById('customCtas');
+
+            if (standardSize === 'custom') {
+                // Show custom pricing option
+                customNotice.classList.add('active');
+                standardCtas.style.display = 'none';
+                customCtas.style.display = 'flex';
+                tshapeGroup.style.display = 'none';
+            } else if (standardSize) {
+                // Show standard options and T-shape selector
+                customNotice.classList.remove('active');
+                standardCtas.style.display = 'flex';
+                customCtas.style.display = 'none';
+                tshapeGroup.style.display = 'block';
+            } else {
+                // No selection
+                customNotice.classList.remove('active');
+                standardCtas.style.display = 'flex';
+                customCtas.style.display = 'none';
+                tshapeGroup.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

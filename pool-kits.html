@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Kits - JC Pool Distributing LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .products {
+            padding: 8rem 5% 5rem;
+            background: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0,61,122,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-content h3 {
+            font-size: 1.5rem;
+            color: #003d7a;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn-details {
+            flex: 1;
+            padding: 0.8rem;
+            background: #003d7a;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-details:hover {
+            background: #002a54;
+        }
+
+        .btn-pricing {
+            flex: 1;
+            padding: 0.8rem;
+            background: #e63946;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-pricing:hover {
+            background: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-highlight">JC</span> Pool Distributing
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Retail Home</a></li>
+                <li class="dropdown">
+                    <a href="#products">Products ▾</a>
+                    <div class="dropdown-content">
+                        <a href="pool-kits.html">Pool Kits</a>
+                        <a href="fences.html">Fences</a>
+                        <a href="signature-products.html">Signature Products</a>
+                    </div>
+                </li>
+                <li><a href="for-dealers.html">For Dealers</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dealer-signup.html" class="nav-cta">Dealer Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pool Kits Section -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Pool Kits</h2>
+            <p>Premium quality pool kits built for professional installers</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- 12x24 Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="12x24 Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>12×24 Pool Kit</h3>
+                    <p>Perfect for compact spaces and residential installations. Complete kit with all necessary components.</p>
+                    <div class="product-buttons">
+                        <a href="pool-product.html?size=12x24" class="btn-details">View Details</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14x28 Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80" alt="14x28 Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>14×28 Pool Kit</h3>
+                    <p>Our most popular size! Ideal for families and standard residential lots. Premium quality materials.</p>
+                    <div class="product-buttons">
+                        <a href="pool-product.html?size=14x28" class="btn-details">View Details</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16x32 Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&q=80" alt="16x32 Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>16×32 Pool Kit</h3>
+                    <p>Spacious design for larger properties. Great for entertaining and lap swimming.</p>
+                    <div class="product-buttons">
+                        <a href="pool-product.html?size=16x32" class="btn-details">View Details</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18x36 Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=800&q=80" alt="18x36 Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>18×36 Pool Kit</h3>
+                    <p>Premium large-format pool kit. Perfect for luxury installations and high-end properties.</p>
+                    <div class="product-buttons">
+                        <a href="pool-product.html?size=18x36" class="btn-details">View Details</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20x40 Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80" alt="20x40 Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>20×40 Pool Kit</h3>
+                    <p>Our largest standard size. Ideal for commercial installations and estate properties.</p>
+                    <div class="product-buttons">
+                        <a href="pool-product.html?size=20x40" class="btn-details">View Details</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Pool Kit -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80" alt="Custom Pool Kit" class="product-image">
+                <div class="product-content">
+                    <h3>Custom Size / Custom Build</h3>
+                    <p>Need a unique size or configuration? We can build to your exact specifications.</p>
+                    <div class="product-buttons">
+                        <a href="contact.html" class="btn-details">Contact Us</a>
+                        <a href="tel:+15551234567" class="btn-pricing">Call for Custom Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JC Pool Distributing</h3>
+                <p>Premium pool kits for professional installers. Built in the USA with superior quality and backed by exceptional dealer support.</p>
+                <div class="made-in-usa">🇺🇸 Made in USA</div>
+                <div class="supplier-logos">
+                    <div class="supplier-logo">Supplier 1</div>
+                    <div class="supplier-logo">Supplier 2</div>
+                    <div class="supplier-logo">Supplier 3</div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Retail Home</a></li>
+                    <li><a href="pool-kits.html">Pool Kits</a></li>
+                    <li><a href="for-dealers.html">For Dealers</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dealer-signup.html">Dealer Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="pool-kits.html">Pool Kits</a></li>
+                    <li><a href="fences.html">Fences</a></li>
+                    <li><a href="signature-products.html">Signature Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 <a href="tel:+15551234567" style="color: #e63946;">(555) 123-4567</a></p>
+                <p>Hours: 7:00 AM – 2:00 PM CT</p>
+                <p>✉️ info@jcpooldistributing.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 JC Pool Distributing LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
